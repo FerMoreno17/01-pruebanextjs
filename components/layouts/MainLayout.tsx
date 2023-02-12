@@ -1,9 +1,13 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import Head from "next/head";
 import styles from "./MainLayout.module.css";
 import Navbar from "../Navbar";
 
-const MainLayout = ({ children }) => {
+type Props = {
+  children?: ReactNode;
+};
+
+const MainLayout = ({ children }: Props) => {
   return (
     <div className={styles.container}>
       <Head>

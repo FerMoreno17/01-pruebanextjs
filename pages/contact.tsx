@@ -19,7 +19,11 @@ export default function Contact() {
   );
 }
 
-Contact.getLayout = function getLayout(page) {
+type Props = {
+  page?: JSX.Element;
+};
+
+Contact.getLayout = function getLayout({ page }: Props) {
   return (
     <MainLayout>
       <BaseLayout>{page}</BaseLayout>

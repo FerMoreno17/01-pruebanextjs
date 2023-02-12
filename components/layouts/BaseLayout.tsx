@@ -1,6 +1,10 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
-const BaseLayout = ({ children }) => {
+type Props = {
+  children?: ReactNode;
+};
+
+const BaseLayout = ({ children }: Props) => {
   return (
     <div
       style={{
